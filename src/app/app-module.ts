@@ -1,18 +1,21 @@
-import { NgModule, provideBrowserGlobalErrorListeners, provideZoneChangeDetection } from '@angular/core';
+import {
+  NgModule,
+  provideBrowserGlobalErrorListeners,
+  provideZoneChangeDetection,
+} from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { App } from './app';
+import { AppComponent } from './app.component';
+import { GameControlComponent } from './game-control/game-control.component';
+import { OddComponent } from './odd/odd.component';
+import { EvenComponent } from './even/even.component';
 
 @NgModule({
-  declarations: [
-    App
-  ],
-  imports: [
-    BrowserModule
-  ],
+  declarations: [AppComponent, GameControlComponent, OddComponent, EvenComponent],
+  imports: [BrowserModule],
   providers: [
     provideBrowserGlobalErrorListeners(),
     provideZoneChangeDetection({ eventCoalescing: true }),
   ],
-  bootstrap: [App]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

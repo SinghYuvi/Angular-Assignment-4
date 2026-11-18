@@ -1,0 +1,9 @@
+.game-control {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  margin-right: 10px;
+  cursor: pointer;
+}
